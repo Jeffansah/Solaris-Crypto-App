@@ -292,18 +292,25 @@ a:hover {
 .news-card {
   min-height: 300px !important;
 }
-.news-image-container {
-  display: flex !important;
-  justify-content: space-between !important;
-}
-.news-title {
-  width: 70%;
+.news-container {
+  overflow: hidden; /* Clear floats */
 }
 
-.news-image-container .img {
-  width: 100px;
+.news-image {
   height: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
 }
+
+.news-title {
+  margin: 0;
+}
+
+.news-title {
+  margin: 0;
+}
+
 .news-card p {
   color: black;
   margin: 10px 0px !important;
