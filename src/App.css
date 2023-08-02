@@ -14,7 +14,7 @@
 }
 
 a:hover {
-  color: var(--pink) !important;
+  color: var(--bgPrimary) !important;
 }
 
 .app {
@@ -282,6 +282,7 @@ a:hover {
 @media screen and (max-width: 500px) {
   .heading {
     margin-top: 20px;
+    color: rgb(180, 180, 180);
   }
 }
 
