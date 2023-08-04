@@ -19,7 +19,7 @@ const App = () => {
       </div>
 
       <div className="main">
-        <Layout>
+        <Layout style={{ minHeight: "100vh" }}>
           <div className="routes">
             <Route exact path="/">
               <Homepage />

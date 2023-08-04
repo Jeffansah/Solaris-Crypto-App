@@ -61,7 +61,18 @@ const Cryptocurrencies = ({ simplified }) => {
           ))}
         </Row>
       ) : (
-        <p>No Results available</p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "60vh",
+          }}
+        >
+          <p style={{ fontWeight: "bold", fontSize: "45px" }}>
+            No Results available
+          </p>
+        </div>
       )}
     </>
   );
