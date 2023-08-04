@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import {
   Navbar,
-  Exchanges,
   Homepage,
   Cryptocurrencies,
   CryptoDetails,
@@ -24,9 +23,7 @@ const App = () => {
             <Route exact path="/">
               <Homepage />
             </Route>
-            <Route exact path="/exchanges">
-              <Exchanges />
-            </Route>
+
             <Route exact path="/cryptocurrencies">
               <Cryptocurrencies />
             </Route>
@@ -52,11 +49,7 @@ const App = () => {
                 Home
               </Typography.Text>
             </Link>
-            <Link to="/exchanges">
-              <Typography.Text style={{ color: "rgb(180, 180, 180)" }}>
-                Exchanges
-              </Typography.Text>
-            </Link>
+
             <Link to="/News">
               <Typography.Text style={{ color: "rgb(180, 180, 180)" }}>
                 News

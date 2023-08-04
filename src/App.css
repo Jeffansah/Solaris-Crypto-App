@@ -74,19 +74,16 @@ a:hover {
 
 @media screen and (max-width: 1300px) {
   .main {
-    margin-left: 50px;
   }
 }
 
 @media screen and (max-width: 1170px) {
   .main {
-    margin-left: 50px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .main {
-    margin-left: 100px;
   }
 }
 
@@ -108,7 +105,7 @@ a:hover {
   }
 
   .nav-container {
-    height: 8vh;
+    height: 6vh !important;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -116,7 +113,10 @@ a:hover {
   }
 
   .menu-control-container {
-    display: block !important;
+    display: flex !important;
+    align-self: start;
+    background-color: rgb(0, 21, 41) !important;
+    color: #ffffff !important;
   }
 
   .ant-menu {

@@ -4,6 +4,7 @@ import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/cryptoAPI";
 import { Cryptocurrencies, News } from "../components";
+import Loader from "./Loader";
 
 const { Title } = Typography;
 
@@ -12,11 +13,15 @@ const Homepage = () => {
 
   const globalStats = data?.data?.stats;
 
-  if (isFetching) return "Loading...";
+  if (isFetching) return <Loader />;
 
   return (
     <>
-      <Title level={2} className="heading">
+      <Title
+        level={2}
+        className="heading"
+        style={{ fontSize: "3.5rem", fontWeight: "bold" }}
+      >
         Global Crypto Stats
       </Title>
       <Row>
